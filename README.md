@@ -1,7 +1,7 @@
 # CODSOFT
 Web Development Projects
 
-This repository showcases three distinct web development projects: a Basic Calculator, an Advanced Landing Page and a Portfolio Website. Each project demonstrates key skills in HTML, CSS, and JavaScript, focusing on responsive design, user interactivity, and modern web practices.
+This repository showcases three distinct web development projects: a Basic Calculator, an Advanced Landing Page and a Portfolio Website. Each project demonstrates key skills in HTML, CSS, and JavaScript, focusing on responsive design, user interactivity and modern web practices.
 
 1. Basic Calculator (index 1.html, node 1.js and styles 1.css)
 
