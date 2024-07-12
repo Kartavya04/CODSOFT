@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+html {
+scroll-behavior: smooth;
+}
+body {
+font-family: Afacad, sans-serif;
+line-height: 1.6;
+}
+#container {
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #de7c1acc;
+color: white;
+text-align: center;
+padding: 10px 0;
+
+z-index: 1;
+}
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+nav a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+nav a:hover {
+color: #ddd;
+}
+header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #e3ddd8;
+}
+
+header > p {
+font-size: 64px;
+padding-left: 20px;
+}
+#profile-pic {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 10px solid #de7c1a;
+box-shadow: 0 0 10px #444444;
+}
+section {
+padding: 20px;
+border-bottom: 1px solid #ddd;
+}
+section > h2 {
+color: #de7c1a;
+}
+section > p {
+font-size: 20px;
+}
+#about {
+margin-top: 100vh;
+}
+.photo-grid {
+display: flex;
+overflow-x: auto;
+gap: 10px;
+padding: 10px 0;
+}
+
+.photo-grid img {
+flex: 0 0 auto;
+width: auto;
+height: 300px;
+border: 1px solid #ddd;
+}
+.photo-grid::-webkit-scrollbar {
+display: none;
+}
+.photo-grid {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.project {
+margin-bottom: 20px;
+}
+.project img {
+width: 100%;
+height: auto;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+th {
+
+background-color: #f4f4f4;
+color: #333;
+}
+td img {
+width: 150px;
+height: 100px;
+border-radius: 5px;
+}
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+tr:hover {
+background-color: #f1f1f1;
+}
+table th:first-child, table td:first-child {
+width: 15%;
+}
+table th:nth-child(2), table td:nth-child(2) {
+width: calc(100% - 15%);
+}
+@media screen and (max-width: 600px) {
+table {
+display: block;
+overflow-x: auto;
+}
+}
+@media (max-width: 600px) {
+.photo-grid {
+grid-template-columns: 1fr;
+}
+}
